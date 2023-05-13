@@ -22,31 +22,37 @@ Describe what each of the following commands does.
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 
-The following tools generally form part of a DevOps engineers toolbox. For each of these describe what it is used for and what class of products it forms part of.
-1. Git
-2. GitHub
-3. Visual Studio Code
-4. AWSCLI
-5. Terraform
-6. Ansible
-With respect to Terraform, what is a provider?
-Describe how Terraform manages state and what is the recommended approach to manage the state file?
+1. The following tools generally form part of a DevOps engineers toolbox. For each of these describe what it is used for and what class of products it forms part of.
+a. Git
+b. GitHub
+c. Visual Studio Code
+b. AWSCLI
+e. Terraform
+f. Ansible
+
+2. With respect to Terraform, what is a provider?
+
+3. Describe how Terraform manages state and what is the recommended approach to manage the state file?
 
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
-You have configured your AWSCLI command line tool with the keys of a user you have created in your AWS account. Upon running the AWSCLI it complains of a permissions problem. What would you do to fix the problem?
-AWS has data centres aggregated in places called regions. Name three regions closest to your home.
-Describe how the AWS root account is different from ordinary IAM user and what is the recommended approach to handle the details of the AWS root account?
+1. You have configured your AWSCLI command line tool with the keys of a user you have created in your AWS account. Upon running the AWSCLI it complains of a permissions problem. What would you do to fix the problem?
+
+2. AWS has data centres aggregated in places called regions. Name three regions closest to your home.
+
+3. Describe how the AWS root account is different from ordinary IAM user and what is the recommended approach to handle the details of the AWS root account?
 What are the AWS access key and secret access key used for?
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
-To what extend do you use public resources such as Google and Youtube to aid in your problem resolution endeavour?
-What would be your attitude if your manager asked you to use Google to investigate a critical issue in your infrastructure?
+1. To what extend do you use public resources such as Google and Youtube to aid in your problem resolution endeavour?
+
+2. What would be your attitude if your manager asked you to use Google to investigate a critical issue in your infrastructure?
 
 
 ## DevOps and Agile Transformation principles and methodology
 
-What behavioural attitudes are conducive for the fostering of Agile and DevOps ways of working?
-What steps do you personally take to promote collaboration and communication in your team?
+1. What behavioural attitudes are conducive for the fostering of Agile and DevOps ways of working?
+
+2. What steps do you personally take to promote collaboration and communication in your team?
