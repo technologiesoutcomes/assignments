@@ -1,18 +1,18 @@
-To submit or share  your assignment create a subdirectory named with your names under the submissions directory. Create a README.md file in your subdirectory and put your assignment  in the README.md.
+To submit create a subdirectory named with your names under the submissions directory. Create a README.md file in your subdirectory and put your assignment  in the README.md.
 
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
 1. Containers and Virtual machines are two approaches to deploying applications. Name the advantages and disadvantages of each.
 
-2. What is an image and how are they created?
+2. What is a Docker image and how are they created?
 
-3. What is a container and how might you run them?
+3. What is a Docker container and how might you run them?
 
 ## Linux administration and shell scripting
 
-1. Write a shell scripts that takes a single input arguments and echoes it back when it is run.
+1. Write a shell script that takes a single input arguments and echoes it back when it is run.
 
-2. Write a shell script that creates directory call "sports" and inside the "sports" directory create two other subdirectories called "football" and "handball". You should be able to run the script multiple times without it failing.
+2. Write a shell script that creates a directory call "sports" and inside the "sports" directory create two other subdirectories called "football" and "handball". You should be able to run the script multiple times without it failing.
 
 3. Copy the code below into a file called hello.sh and run it. Explain the behaviour.
 ```
@@ -65,25 +65,24 @@ exit 0
 5. Create a script that reads in three positional parameters from the command line,
 assigns those parameters to variables names ONE, TWO, and THREE, respectively,
 and then outputs that information in the following format:
-There are X parameters that include Y.
-The first is A, the second is B, the third is C.
+There are X parameters that include Y. The first is A, the second is B, the third is C.
 Replace X with the number of parameters and Y with all parameters entered.
 Then replace A with the contents of variable ONE, B with variable TWO, and C
 with variable THREE.
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 
-1. Read Chapter 1, page 1 - page 37 and with respect to your learning answer the following questions:
+1. Read Chapter 1, page 1 - page 37 of the Terraform Up and Running book and with respect to your learning answer the following questions:
 
 * What do you understand by the term Idempotence?
 
 * What are the benefits of adopting a DevOps way of working for an organisation?
 
-* What are the benefits of provisioning infrastructure using tools like Terraform, Ansible?
+* What are the benefits of provisioning infrastructure using tools like Terraform and Ansible?
 
 * Some provisioning and configuration management tools require the installation of agents on managed servers. Can you list the advantages and disadvantages of tools based on agents?
 
-* Compare and contrast mutable and immutable infrastructures design paradigms
+* Compare and contrast mutable and immutable infrastructures design paradigms.
 
 * Name some commercial and enterprise tools and the circumstances under which you would recommend them.
 
@@ -100,12 +99,14 @@ with variable THREE.
 
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
-1. Draw a solution architecture diagram illustration the flow of information in a provisioning pipeline comprising AWS, GitHub, your laptop, Terraform and Terraform state file stored in AWS.
+1. Draw a solution architecture diagram illustrating the flow of information in a provisioning pipeline comprising AWS, GitHub, your laptop, Terraform and Terraform state file stored in AWS.
+2. You run a command on your local laptop to clone a public repository and then run another command to push the cloned repository to your own GitHub repository. Draw a solution architecture diagram to depict the flow of information.
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
-1. You are asked by your manager to implement and automated system to collect metrics from your infrastructure by using a third party vendor's product. What steps might you take to ensure the system is not going to cause unwanted effects?
+1. You are asked by your manager to implement an automated system to collect metrics from your infrastructure by using a third party vendor's product. What steps might you take to ensure the system is not going to cause unwanted effects?  How might you check that?
+2. Your manager asked you to run a script that is unfamiliar to you. How are you going to go about ensuring that this operation is done safely?
 
 
 ## DevOps and Agile Transformation principles and methodology
