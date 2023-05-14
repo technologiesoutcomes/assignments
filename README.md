@@ -8,7 +8,7 @@ mkdir myassignments
 cd myassignments
 ```
 
-Then clone the repository below into your <b>myassignmnents</b> subdirectory.
+Then clone the repository below into your <b>myassignments</b> subdirectory.
 ```
 git clone https://github.com/techoutcomes/assignments
 ```
