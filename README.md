@@ -1,6 +1,6 @@
 
 
-<b>Make sure you </b> are in the <b>technologiesoutcomes</b> and while in the <b>technologiesoutcomes</b> directory create a subdirectory called <b>myassignments</b> directory and change into it.
+<b>Make sure you </b> are in the <b>technologiesoutcomes</b> and while in the <b>technologiesoutcomes</b> directory create a subdirectory called <b>myassignments</b> and change into it.
 
 ```
 mkdir myassignments
