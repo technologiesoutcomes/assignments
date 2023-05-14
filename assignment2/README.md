@@ -118,7 +118,7 @@ with variable THREE.
 ## New commands logs - Enter up to ten new commands you have learnt this week
 
 | Number      | Commands | What does it do and how might you check its effect     |
-| :---        |    :----:   |          ---: |
+| :---        |    :----:   | :---  |
 | 1  | XXXXXXXX       | YYYYYYYY   |
 | 2  | XXXXXXXX       | YYYYYYYY   |
 | 3  | XXXXXXXX       | YYYYYYYY   |
@@ -133,7 +133,7 @@ with variable THREE.
 ## Glossary of the week - Enter new technical words you have learnt this week and their meanings.
 
 | Number   | Word | Meaning     |
-| :---     | :----:   |  ---: |
+| :---     | :----:   |  :---  |
 | 1  | XXXXXXXX       | YYYYYYYY   |
 | 2  | XXXXXXXX       | YYYYYYYY   |
 | 3  | XXXXXXXX       | YYYYYYYY   |
