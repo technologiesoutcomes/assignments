@@ -28,9 +28,35 @@ For instance if your names were Bob Ndikam, your directory would be called <b>bo
 cp -R student1 bobndikam
 ```
 
-This will create a new subdirectory named with your names. Change into your new subdirectory and launch Visual Studio Code. Edit the README.md file and add your answers to the assignment questions. Save your work.
+This will create a new subdirectory named with your names. Change into your new subdirectory. 
+```
+cd bobndikam
+```
+Launch Visual Studio Code.
+
+```
+code .
+```
+
+Edit the README.md file and add your answers to the assignment questions. Save your work.
 
 
-<b>Change back to the root of your repository and push your change back to the main GitHub repository.</b>
+<b>Change back to the root of your repository.</b>
+
+```
+cd ../../
+```
+
+Push your assignment submission to the main GitHub repository.
+
+```
+git pull
+git add .
+git commit -m "bobndikam: My submission for assignment 2"
+git push
+```
+
+Go and check the GitHub repository and verify that your submission has appeared and is in the right place. If it is, this completes the submission. If not take action to make whatever corrections are necessary.
+
 
 
