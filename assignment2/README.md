@@ -1,3 +1,5 @@
+To submit or share  your assignment create a subdirectory named with your names under the submissions directory. Create a README.md file in your subdirectory and put your assignment  in the README.md.
+
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
 1. Containers and Virtual machines are two approaches to deploying applications. Name the advantages and disadvantages of each.
