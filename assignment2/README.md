@@ -1,4 +1,4 @@
-### Assignment 2
+# Assignment 2
 
 Complete this assigment preferably as a team and submit on or before 19/05/2023. If you work as a team provide the names of all the individuals of the team.
 
