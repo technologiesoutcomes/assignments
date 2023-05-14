@@ -14,7 +14,7 @@ git clone https://github.com/techoutcomes/assignments
 ```
 Change into the <b>assignments</b> directory
 ```
-cd assigments
+cd assignments
 ```
 Change into the relevant assignment subdirectory. For instance if you want to submit assignment2 work, change into the assignment2 subdirectory.
 ```
