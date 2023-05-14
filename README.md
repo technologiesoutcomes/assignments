@@ -1,6 +1,6 @@
 
 
-Create a subdirectory called myassignments under your technologiesoutcomes directory and change into it. Then clone the repository below into your myassignmnents subdirectory
+Create a subdirectory called myassignments under your <b>technologiesoutcomes</b> directory and change into it. Then clone the repository below into your myassignmnents subdirectory
 ```
 git clone https://github.com/techoutcomes/assignments
 ```
