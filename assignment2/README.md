@@ -1,4 +1,7 @@
-To submit create a subdirectory named with your names under the submissions directory. Create a README.md file in your subdirectory and put your assignment  in the README.md.
+### Assignment 2
+
+Complete this assigment preferably as a team and submit on or before 19/05/2023. If you work as a team provide the names of all the individuals of the team.
+
 
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
