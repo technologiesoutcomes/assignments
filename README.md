@@ -16,12 +16,12 @@ Change into the <b>assignments</b> directory
 ```
 cd assignments
 ```
-Change into the relevant assignment subdirectory. For instance if you want to submit assignment2 work, change into the assignment2 subdirectory.
+Change into the relevant assignment submissions subdirectory. For instance if you want to submit assignment2 work, change into the assignment2 subdirectory.
 ```
-cd assignment2
+cd assignment2/submissions
 ```
 
-While in <b>assignment2</b> subdirectory, copy the <b>student1</b> subdirectory to a new subdirectory with a name exactly matching your names - the names by which you are known on the platform. No spaces and only use lower case characters. You must retain this naming convention going forward.
+While in <b>assignment2/submissions</b> subdirectory, copy the <b>student1</b> subdirectory to a new subdirectory with a name exactly matching your names - the names by which you are known on the platform. No spaces and only use lower case characters. You must retain this naming convention going forward.
 
 For instance if your names were Bob Ndikam, your directory would be called <b>bobndikam</b>
 ```
