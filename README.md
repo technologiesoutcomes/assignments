@@ -10,7 +10,7 @@ cd myassignments
 
 Then clone the repository below into your <b>myassignments</b> subdirectory.
 ```
-git clone https://github.com/techoutcomes/assignments
+git clone https://github.com/technologiesoutcomes/assignments
 ```
 Change into the <b>assignments</b> directory
 ```
