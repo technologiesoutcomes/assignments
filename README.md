@@ -16,7 +16,7 @@ Change into the <b>assignments</b> directory
 ```
 cd assignments
 ```
-Change into the relevant assignment submissions subdirectory. For instance if you want to submit assignment2 work, change into the assignment2 subdirectory.
+Change into the relevant assignment submissions subdirectory. For instance if you want to submit assignment2 work, change into the assignment2 submissions subdirectory as follows;
 ```
 cd assignment2/submissions
 ```
