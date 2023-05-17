@@ -13,7 +13,7 @@ Then clone the repository below into your <b>myassignments</b> subdirectory.
 git clone https://github.com/technologiesoutcomes/assignments
 ```
 
-The create a branch for your assignment using your names and the assigment number. So if your name is <b>Bob Ndikam</b> and your are doing assignment2 you will create the branch as follows. 
+Then create a branch for your assignment using your names and the assigment number. So if your name is <b>Bob Ndikam</b> and your are doing <b>assignment2</b> you will create the branch as follows. 
 
 ```
 git checkout -b bobndikam-assignment2
