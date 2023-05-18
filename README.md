@@ -12,6 +12,21 @@ Then clone the repository below into your <b>myassignments</b> subdirectory.
 ```
 git clone https://github.com/technologiesoutcomes/assignments
 ```
+
+Then create a branch for your assignment using your names and the assigment number. So if your name is <b>Bob Ndikam</b> and your are doing <b>assignment2</b> you will create the branch as follows. 
+
+```
+git checkout -b bobndikam-assignment2
+```
+
+Verify that you are sitting on the newly created branch.
+
+```
+git branch
+```
+You should see that your branch is displayed with a star.
+
+
 Change into the <b>assignments</b> directory
 ```
 cd assignments
@@ -50,7 +65,7 @@ cd ../../
 Push your assignment submission to the main GitHub repository.
 
 ```
-git pull
+
 git add .
 git commit -m "bobndikam: My submission for assignment 2"
 git push
