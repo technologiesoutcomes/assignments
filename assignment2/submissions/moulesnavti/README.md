@@ -1,10 +1,6 @@
 ## My name is MoulesNavti Outcomer and please file below my submission
 
-########################################################################################
-####  1) Containers and Virtual machines are two approaches to deploying applications.# ####   Name the advantages and disadvantages of each.                             ######
-########################################################################################
-
-
+##  1) Containers and Virtual machines are two approaches to deploying applications. Name the advantages and disadvantages of each.                   
 Containers and virtual machines are two popular approaches to deploying applications, each with its own advantages and disadvantages. Here are the key characteristics of each:
 
 ## Virtual Machines (VMs):
@@ -59,11 +55,12 @@ Docker containers provide a consistent and efficient way to package, deploy, and
 
 | Number      | Commands | What does it do and how might you check its effect     |
 
-1| git merge -s recursive     |The command "git merge -s recursive" is used to perform a                             |merge operation in Git, using the recursive merge strategy.
-                              |USed when (git pull) failed 
+1| git merge -s recursive     
+The command "git merge -s recursive" is used to perform a  merge operation in Git, using the recursive merge strategy. USed when (git pull) failed 
 
 ## Glossary of the week - Enter new technical words you have learnt this week and their meanings.
 
 | Number   | Word | Meaning     |
 
-1) Microservices: An architectural style where applications are built as a collection of small, independent services that communicate with each other through well-defined APIs. Microservices enable teams to develop, deploy, and scale individual services independently, promoting flexibility and resilience in applications.
+1) Microservices: 
+An architectural style where applications are built as a collection of small, independent services that communicate with each other through well-defined APIs. Microservices enable teams to develop, deploy, and scale individual services independently, promoting flexibility and resilience in applications.
