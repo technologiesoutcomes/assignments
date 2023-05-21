@@ -65,7 +65,7 @@ Describe what you think this code is doing.
 ## DevOps and Agile Transformation principles and methodology
 
 1. Communication, Collaboration and Automation and key aspects of a successful DevOps implementation. Describe why these traits are important in a DevOps transformation process.
-2. You work for an organisation that is very keen to <b> Make their work visible<b> across the organisation. What do you understand by this and how would you suggest they go about it?
+2. You work for an organisation that is very keen to <b> Make their work visible</b> across the organisation. What do you understand by this and how would you suggest they go about it?
 
 
 ## New commands logs - Enter up to ten new commands you have learnt this week
