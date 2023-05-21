@@ -1,8 +1,8 @@
-### Assignments
+# Assignments
 
 ## Submitting your assignment 
 
-# Method A - Submitting to the TechnologiesOutcomes GitHub repository (Preferred approach)
+### Method A - Submitting to the TechnologiesOutcomes GitHub repository (Preferred approach)
 
 <b>Make sure you </b> are in the <b>technologiesoutcomes</b> and while in the <b>technologiesoutcomes</b> directory create a subdirectory called <b>myassignments</b> and change into it.
 
@@ -78,7 +78,7 @@ git push
 Go and check the GitHub repository and verify that your submission has appeared and is in the right place. If it is, this completes the submission. If not take action to make whatever corrections are necessary.
 
 
-# Method B - Submitting to your personal GitHub repository 
+### Method B - Submitting to your personal GitHub repository 
 
 
 
