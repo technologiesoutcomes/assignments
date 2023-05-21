@@ -65,3 +65,35 @@ Describe what you think this code is doing.
 ## DevOps and Agile Transformation principles and methodology
 
 1. Communication, Collaboration and Automation and key aspects of a successful DevOps implementation. Describe why these traits are important in a DevOps transformation process.
+
+
+## New commands logs - Enter up to ten new commands you have learnt this week
+
+| Number      | Commands | What does it do and how might you check its effect     |
+| :---        |    :----:   | :---  |
+| 1  | XXXXXXXX       | YYYYYYYY   |
+| 2  | XXXXXXXX       | YYYYYYYY   |
+| 3  | XXXXXXXX       | YYYYYYYY   |
+| 4  | XXXXXXXX       | YYYYYYYY   |
+| 5  | XXXXXXXX       | YYYYYYYY   |
+| 6  | XXXXXXXX       | YYYYYYYY   |
+| 7  | XXXXXXXX       | YYYYYYYY   |
+| 8  | XXXXXXXX       | YYYYYYYY   |
+| 9  | XXXXXXXX       | YYYYYYYY   |
+| 10 | XXXXXXXX       | YYYYYYYY   |
+
+## Glossary of the week - Enter new technical words you have learnt this week and their meanings.
+
+| Number   | Word | Meaning     |
+| :---     | :----:   |  :---  |
+| 1  | XXXXXXXX       | YYYYYYYY   |
+| 2  | XXXXXXXX       | YYYYYYYY   |
+| 3  | XXXXXXXX       | YYYYYYYY   |
+| 4  | XXXXXXXX       | YYYYYYYY   |
+| 5  | XXXXXXXX       | YYYYYYYY   |
+| 6  | XXXXXXXX       | YYYYYYYY   |
+| 7  | XXXXXXXX       | YYYYYYYY   |
+| 8  | XXXXXXXX       | YYYYYYYY   |
+| 9  | XXXXXXXX       | YYYYYYYY   |
+| 10 | XXXXXXXX       | YYYYYYYY   |
+
