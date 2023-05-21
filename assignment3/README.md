@@ -1,11 +1,21 @@
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
-
+1. What is a hypervisor and where does it sit in the server virtualisation stack?
+2. What is a container runtime and name the two most common runtimes?
 
 ## Linux administration and shell scripting
-
-
-
+1. Use just one command to create a directory structure
+.
+└── sports
+    └── footballteams
+        └── africanteams
+            └── samamba
+ 2. Research the following linux commands
+    a) grep
+    b) sed
+    c) awk
+    
+            
 ## CICD, Git, GitHub, GitHub Action, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 1. You create a repository in GitHub called <b>myfirstrepo</b>. You then clone this repository on your local laptop. On your laptop how would you check its remote address? How would you go about changing the remote address so that it points to repository called <b>mysecondrepo</b>?
 2. You have a workflow running on GitHub Action that has the following code;
@@ -40,7 +50,6 @@ Describe what you think this code is doing.
 ## System Architecture and Application Design, Cloud Computing (AWS)
 1. You have worked thus far with systems that you have had to download and install on your local laptop as well as systems hosted remotely on some external cloud. Describe in details the features and capabilities of all the systems (local and remote) that you have worked with thus far on this training. Draw a solution architecture diagram depicting these systems and where they fit in your solution landscape.
 2. For all the systems that you have installed locally, write a manual for its installation and configuration.
-
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
