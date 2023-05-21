@@ -4,13 +4,9 @@
 2. What is a container runtime and name the two most common runtimes?
 
 ## Linux administration and shell scripting
-1. Use just one command to create a directory structure
-.
-└── sports
-    └── footballteams
-        └── africanteams
-            └── samamba
- 2. Research the following linux commands
+1. Use just one command to create a directory structure where the directory sports contains a directory called footballteams which itself contains africanteam which itself contains pwdkumba.
+2. Use the tree command to display your directory structure.
+3. Research the following linux commands
     a) grep
     b) sed
     c) awk
@@ -50,11 +46,22 @@ Describe what you think this code is doing.
 ## System Architecture and Application Design, Cloud Computing (AWS)
 1. You have worked thus far with systems that you have had to download and install on your local laptop as well as systems hosted remotely on some external cloud. Describe in details the features and capabilities of all the systems (local and remote) that you have worked with thus far on this training. Draw a solution architecture diagram depicting these systems and where they fit in your solution landscape.
 2. For all the systems that you have installed locally, write a manual for its installation and configuration.
+3. In a general manner describe would you would interact with AWS account
+4. AWS provide a public and a private area in which you could deploy your services. In which of these would you deploy the following services?
+    a) EC2 instances
+    b) DynamoDB databases
+    c) VPC network
+    d) S3 buckets
+    e) IAM users
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
-
+1. Research on what APM (application programming monitoring)
+2. What is a system metric and why might it be useful to collect metrics?
+3. What is an system log and why might you want to collect logs?
 
 
 ## DevOps and Agile Transformation principles and methodology
+
+1. Communication, Collaboration and Automation and key aspects of a successful DevOps implementation. Describe why these traits are important in a DevOps transformation process.
