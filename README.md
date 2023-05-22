@@ -81,5 +81,31 @@ Go and check the GitHub repository and verify that your submission has appeared 
 ### Method B - Submitting to your personal GitHub repository 
 
 
+1) Create a repository in your GitHub called "assignments" and make a note of its address.
+
+2) Clone the technologiesoutcomes assignments repository
+
+git clone https://github.com/technologiesoutcomes/assignments.git
+
+3) Do the assignments in the relevant assignment directory in your local repository.
+When you are ready to push, you should push to your own GitHub repository. 
+
+To push to your own GitHub you will have to change the push address of your local repository.
+Change the push address as follow. Change the ???????? below to your GitHub account name.
+
+git remote set-url --add --push origin https://github.com/???????/assignments.git
+
+4) Then run the commands to push
+
+git add .
+git commit -m "My submission for assignments"
+git push
+
+5) Regularly refresh your repository as follows:
+
+git pull
+
+6) Post the link of the assignments on the whatsapp group.
+
 
 
