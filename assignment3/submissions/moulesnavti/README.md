@@ -10,11 +10,15 @@
 
 ## Linux administration and shell scripting
 1. Use just one command to create a directory structure where the directory sports contains a directory called footballteams which itself contains africanteam which itself contains pwdkumba.
+
   $mkdir -p sports/footballteams/Africanteam/pwdkumba
 
 2. Use the tree command to display your directory structure.
-  tree sports
+  
+  $tree sports
+
 3. Research the following linux commands
+
     a) grep
       It is a command-line utility used for searching and filtering text based on patterns or regular expressions.
 
@@ -138,8 +142,7 @@ Application Performance Monitoring (APM) refers to the practice of monitoring an
 | Number   | Word | Meaning     |
 | :---     | :----:   |  :---  |
 | 1  | Silos       | In the context of organizations and teams, "silos" refer to isolated or separate groups or departments that operate independently and have limited communication or collaboration with other groups. Silos are characterized by a lack of information sharing, limited knowledge transfer, and a focus on individual goals rather than collective objectives.   |
-| 2  | Shebang        | In the context of computer programming, a shebang (also known as a hashbang or a hashpling) refers to the initial line in a script file that specifies the interpreter or the command-line tool that should be used to execute the script. It typically begins with a shebang character sequence, followed by the path to the interpreter or command.
-   |
+| 2  | Shebang        | In the context of computer programming, a shebang (also known as a hashbang or a hashpling) refers to the initial line in a script file that specifies the interpreter or the command-line tool that should be used to execute the script. It typically begins with a shebang character sequence, followed by the path to the interpreter or command.   |
 | 3  | XXXXXXXX       | YYYYYYYY   |
 | 4  | XXXXXXXX       | YYYYYYYY   |
 | 5  | XXXXXXXX       | YYYYYYYY   |
