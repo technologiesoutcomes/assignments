@@ -11,7 +11,7 @@ With respect to Kubernetes define what the following entities mean.
 ## Linux administration and shell scripting
 
 1) You have a shell script called addAccount.sh and you are trying to run the script but it is complaining that some permissions are missing. What would you do to fix that?
-2) 
+2) What Linux command would your use to find out what commands you have run in the past?
 
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
@@ -102,7 +102,10 @@ e) terraform destroy
 
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
-
+1. You have an application running on one server in the cloud serving requests from customers. There is a sudden increase in request from customers reaching the application and a lot of requests are failing or are extremely slow.
+a) Draw a diagram show this architecture.
+b) How could you re-architect the application to allow it to handle more request?
+c) Draw a diagram of the new design.
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
