@@ -1,3 +1,19 @@
+## Key Learnings, experience and Your main selling points
+
+| Number      |           Subject              | What you have learnt this week and how might you describe this at an interview?   |
+| :---        |            :----:              | :---  |
+| 1  | Collaboration                           | YYYYYYYY   |
+| 2  | Communication                           | YYYYYYYY   |
+| 3  | Automation/CICD                         | YYYYYYYY   |
+| 4  | AWS                                     | YYYYYYYY   |
+| 5  | Kubernetes                              | YYYYYYYY   |
+| 6  | Terraform                               | YYYYYYYY   |
+| 7  | Linux                                   | YYYYYYYY   |
+| 8  | System and Application Design           | YYYYYYYY   |
+| 9  | Productivity                            | YYYYYYYY   |
+| 10 | Agile                                   | YYYYYYYY   |
+
+
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
 With respect to Kubernetes define what the following entities mean.
@@ -116,3 +132,36 @@ e) terraform destroy
 
 
 ## DevOps and Agile Transformation principles and methodology
+
+
+
+## New commands logs - Enter up to ten new commands you have learnt this week
+
+| Number      | Commands | What does it do and how might you check its effect     |
+| :---        |    :----:   | :---  |
+| 1  | XXXXXXXX       | YYYYYYYY   |
+| 2  | XXXXXXXX       | YYYYYYYY   |
+| 3  | XXXXXXXX       | YYYYYYYY   |
+| 4  | XXXXXXXX       | YYYYYYYY   |
+| 5  | XXXXXXXX       | YYYYYYYY   |
+| 6  | XXXXXXXX       | YYYYYYYY   |
+| 7  | XXXXXXXX       | YYYYYYYY   |
+| 8  | XXXXXXXX       | YYYYYYYY   |
+| 9  | XXXXXXXX       | YYYYYYYY   |
+| 10 | XXXXXXXX       | YYYYYYYY   |
+
+## Glossary of the week - Enter new technical words you have learnt this week and their meanings.
+
+| Number   | Word | Meaning     |
+| :---     | :----:   |  :---  |
+| 1  | XXXXXXXX       | YYYYYYYY   |
+| 2  | XXXXXXXX       | YYYYYYYY   |
+| 3  | XXXXXXXX       | YYYYYYYY   |
+| 4  | XXXXXXXX       | YYYYYYYY   |
+| 5  | XXXXXXXX       | YYYYYYYY   |
+| 6  | XXXXXXXX       | YYYYYYYY   |
+| 7  | XXXXXXXX       | YYYYYYYY   |
+| 8  | XXXXXXXX       | YYYYYYYY   |
+| 9  | XXXXXXXX       | YYYYYYYY   |
+| 10 | XXXXXXXX       | YYYYYYYY   |
+
