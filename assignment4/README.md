@@ -103,9 +103,11 @@ e) terraform destroy
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
 1. You have an application running on one server in the cloud serving requests from customers. There is a sudden increase in request from customers reaching the application and a lot of requests are failing or are extremely slow.
-a) Draw a diagram show this architecture.
-b) How could you re-architect the application to allow it to handle more request?
-c) Draw a diagram of the new design.
+* Draw a diagram showing this architecture.
+* How could you re-architect the application to allow it to handle more request?
+* Draw a diagram of the new design.
+
+2. You wish to SSH from you local laptop to your server in the AWS cloud. Describe the configuration you will need in place on your local laptop and on the AWS cloud to enable this.
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
