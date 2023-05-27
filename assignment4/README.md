@@ -11,7 +11,7 @@
 | 7  | Linux                                   | YYYYYYYY   |
 | 8  | System and Application Design           | YYYYYYYY   |
 | 9  | Productivity                            | YYYYYYYY   |
-| 10 | Agile                                   | YYYYYYYY   |
+| 10 | Yourself and your abilities             | YYYYYYYY   |
 
 
 ## Kubernetes, Docker, Containerisation and Virtualisation
