@@ -39,7 +39,7 @@ With respect to Kubernetes define what the following entities mean.
 
 
 1. You want to use the following code to created an AWS EKS resource from the 
-public repository pointed to by the source clause. Would could you ensure
+public repository pointed to by the source clause. How could you ensure
 that any changes made to the public repository you are pointing to does not
 adversely affect your infrastructure?
 
@@ -121,6 +121,13 @@ e) terraform destroy
 21. What do you understand by Terraform partial backend configuration?
 22. What do you understand by the <b> Chicken-and-Egg </b> problem with respect to Terraform backend configuration and how is it generally solved.
 
+23. You want to use the Terraform public module "[terraform-aws-modules/ec2-instance/aws](https://github.com/terraform-aws-modules/terraform-aws-ec2-instance)" as shown in the code below. Go and look in the public module and fill in some of the interface value you will need in order to create the module
+```
+module "ec2_instance" {
+  source = "terraform-aws-modules/ec2-instance/aws"
+
+}
+```
 
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
