@@ -134,11 +134,14 @@ e) terraform destroy
 4. Describe as best as possible what a three-tier architecture is? Which of the three tier would you deploy so that it is accessible to the internet?
 
 5. Create a server (EC2 instance - Amazon Linux 2023, Free tier) in your AWS account and do the following.
-* Log onto the EC2 instance from your local machime.
+* Log onto the EC2 instance from your local machine.
 * Copy a file from your local machine onto the EC2 instance.
 * What would you have to do to allow someone else to log onto your server?
 * Add this public key into your authorised_key file
-* Shut down your server (do not terminate it)
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCkyNUp8esDy/6wOaBVo7Xq1JVuhuF3E8kQPWRAAdLPdbhwwpH2+SPuFoBF4Pk4RWkpNQMBZp+9uo9NNXB8PpHQxF5vFUrhJG8cmymdWdRG4YpXBOhThwU6TFo/qdz7E3oVYMkWAeuXgVpMRhwpHmy+Rv+JBx8g9Nc7UFMiMz1mHqYq7qCOaLGKBMWaw33Z3PUzZlNQk9MzM5wNaIOXg5QSEXaNNpQt0vyYbS5guVSLiN92UEypZqEwsqW2E1yUySjCkbCgO6kWVlYONUZqS9dVzi4QZ/DzwZWZz8hdYg8u1M+b3twmLlNHzZn9qkL5sP9c9SVj5eLFAarYgtAfg05t sunatrakey
+```
+* Shut down your server (do not terminate it). We shall be performing some tests on the machine later.
 
 6. What is a bastion server and why is it required in some network architectures?
 7. In terms of accessibility, what is the difference between a Public IP and a Private IP
