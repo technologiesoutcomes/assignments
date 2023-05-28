@@ -1,4 +1,6 @@
-## Key Learnings, experience and your main selling points
+## Key learnings, experience and your main selling points.
+
+This section will be used to write your profile for your CV. So record your key learnings and experience on a weekly basis so we can track your progress and learning.
 
 | Number      |           Subject              | What you have learnt this week and how might you describe this at an interview?   |
 | :---        |            :----:              | :---  |
