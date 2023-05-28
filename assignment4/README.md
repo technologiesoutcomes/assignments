@@ -126,7 +126,7 @@ e) terraform destroy
 
 2. You wish to SSH from you local laptop to your server in the AWS cloud. Describe the configuration you will need in place on your local laptop and on the AWS cloud to enable this.
 
-3. What role does a database play in the overall buainess system design and what steps might you take to ensure the database is resilient and highly available?
+3. What role does a database play in the overall business system design and what steps might you take to ensure the database is resilient and highly available?
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
