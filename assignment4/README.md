@@ -114,6 +114,7 @@ e) terraform destroy
 19. What Terraform concept would you use to ensure your code is re-useable?
 20. Terraform provisioning are directory-oriented in the sense that the resources created in a "Terraform apply" are defined in the same directory and each directory maps to a state. You want to created three different environment (dev, test and production) from one directory containing the main Terraform definitions. How would you organise your file and directory system?
 21. What do you understand by Terraform partial backend configuration?
+22. What do you understand by the <b> Chicken-and-Egg </b> problem with respect to Terraform backend configuration and how is it generally solved.
 
 
 ## System Architecture and Application Design, Cloud Computing (AWS)
