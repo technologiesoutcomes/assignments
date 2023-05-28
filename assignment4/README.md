@@ -1,4 +1,4 @@
-## Key Learnings, experience and Your main selling points
+## Key Learnings, experience and your main selling points
 
 | Number      |           Subject              | What you have learnt this week and how might you describe this at an interview?   |
 | :---        |            :----:              | :---  |
