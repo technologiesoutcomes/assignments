@@ -48,16 +48,16 @@ Describe what you think this code is doing.
 2. For all the systems that you have installed locally, write a manual for its installation and configuration.
 3. In a general manner describe would you would interact with AWS account
 4. AWS provide a public and a private area in which you could deploy your services. In which of these would you deploy the following services?
-    a) EC2 instances
-    b) DynamoDB databases
-    c) VPC network
-    d) S3 buckets
-    e) IAM users
+    *) EC2 instances
+    *) DynamoDB databases
+    *) VPC network
+    *) S3 buckets
+    *) IAM users
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
-1. Research on what APM (application programming monitoring)
+1. Research on what APM (Application Performance Monitoring)
 2. What is a system metric and why might it be useful to collect metrics?
 3. What is an system log and why might you want to collect logs?
 
