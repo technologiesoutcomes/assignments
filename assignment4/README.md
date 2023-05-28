@@ -153,11 +153,29 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCkyNUp8esDy/6wOaBVo7Xq1JVuhuF3E8kQPWRAAdLP
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
+1.
+
+2.
+
+3.
+
+4.
+
+5.
 
 
 
 ## DevOps and Agile Transformation principles and methodology
 
+1.
+
+2.
+
+3.
+
+4.
+
+5.
 
 
 ## New commands logs - Enter up to ten new commands you have learnt this week
