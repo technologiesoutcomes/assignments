@@ -28,7 +28,10 @@ With respect to Kubernetes define what the following entities mean.
 
 1) You have a shell script called addAccount.sh and you are trying to run the script but it is complaining that some permissions are missing. What would you do to fix that?
 2) What Linux command would your use to find out what commands you have run in the past?
-
+3) Research the following Linux commands
+* chmod
+* scp
+* ssh
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 
@@ -127,6 +130,21 @@ e) terraform destroy
 2. You wish to SSH from you local laptop to your server in the AWS cloud. Describe the configuration you will need in place on your local laptop and on the AWS cloud to enable this.
 
 3. What role does a database play in the overall business system design and what steps might you take to ensure the database is resilient and highly available?
+
+4. Describe as best as possible what a three-tier architecture is? Which of the three tier would you deploy so that it is accessible to the internet?
+
+5. Create a server (EC2 instance - Amazon Linux 2023, Free tier) in your AWS account and do the following.
+* Log onto the EC2 instance from your local machime.
+* Copy a file from your local machine onto the EC2 instance.
+* What would you have to do to allow someone else to log onto your server?
+* Add this public key into your authorised_key file
+* Shut down your server (do not terminate it)
+
+6. What is a bastion server and why is it required in some network architectures?
+7. In terms of accessibility, what is the difference between a Public IP and a Private IP
+8. Describe at a high level how the ssh system works.
+9. When you create a key pair on AWS, describe where the keys are stored.
+10. When you create an EC2 instance on AWS, a network interface is also created and a Private IP is attached with the interface. Describe why this is important.
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
