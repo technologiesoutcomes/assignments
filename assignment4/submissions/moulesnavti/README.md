@@ -86,20 +86,14 @@ public repository pointed to by the source clause. How could you ensure
 that any changes made to the public repository you are pointing to does not
 adversely affect your infrastructure?
 
-```
-module "myeks" {
-   source = "terraform-aws-modules/terraform-aws-eks"
-   cluster_name = "mycluster"
-}
-```
 a) Version Pinning: Specify a specific version or commit hash of the module you are using. This ensures that your infrastructure is built using a known and tested version of the module, regardless of any changes made to the repository in the future.
-
 ```
 module "myeks" {
    source = "terraform-aws-modules/eks/aws"
    version = "x.x.x"  # Replace with the desired version or commit hash
    cluster_name = "mycluster"
-}```
+}
+```
 
 b) Use a Private Fork: Create a private fork of the public repository and use the forked repository as the source. This allows you to have control over the changes made to the module and prevents unexpected changes from affecting your infrastructur
 
