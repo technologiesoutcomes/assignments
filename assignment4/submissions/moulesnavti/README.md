@@ -178,7 +178,7 @@ Configure credentials or authentication for the chosen backend provider.
 Collaborate with your team by sharing the state file stored in the backend, ensuring synchronized state changes.
 Configuring a backend ensures secure and centralized state storage, enabling collaboration and providing additional backend features for managing Terraform state.
 
-'''
+```
 terraform {
   backend "s3" {
     bucket = "my-terraform-state-bucket"
@@ -186,7 +186,7 @@ terraform {
     region = "us-west-2"
   }
 }
-'''
+```
 
 9. Describe the various method by which Terraform might obtain credentials it needs for authenticating to an endpoint?
 
@@ -207,7 +207,15 @@ are resolved before you provision your resources?
 11. You have provisioned some infrastructure in the AWS cloud using Terraform. How could you check by querying the state what 
 resources you have created using Terraform?
 
+You can check resources created by running the command
+ 
+```
+terraform state list
+```
 12. What is the recommended approach for editing the Terraform state?
+
+The recommended approach for editing the Terraform state is to use the Terraform CLI itself and follow the recommended workflow. Directly editing the state file manually is generally discouraged as it can introduce inconsistencies and errors
+
 
 13. Describe as best as possible what the following code does.
 ```
@@ -220,6 +228,9 @@ terraform {
 }
 ```
 
+The provided Terraform configuration block sets up an S3 backend for storing the Terraform state file. The block specifies the name of an S3 bucket, "techoutcomes-terraforms.tfstate", where the state file will be stored. The state file is given the name "simplegithubactions". The S3 bucket is located in the "eu-west-1" region. This configuration allows Terraform to automatically store and manage the state file in the specified S3 bucket.
+
+
 14. Describe as best as possible what the following code does.
 ```
 provider "aws" {
@@ -227,27 +238,104 @@ provider "aws" {
 }
 ```
 
+The provided Terraform configuration block sets up the AWS provider and dynamically sets the region using a local variable. It ensures that Terraform interacts with the AWS service in the specified region, which is determined by the value of the local.region variable. This approach allows for flexibility in deploying resources to different AWS regions by updating the value of the local variable.
+
+
 15. What does is mean to lock and Terraform state file and why is it important to implement a locking mechanism for the state file?
+
+Implementing a locking mechanism for the Terraform state file is crucial to prevent concurrent modifications, maintain consistency, enable collaboration, and ensure atomic operations. It allows only one user or process to modify the state file at a time, reducing conflicts and data corruption. Locking mechanisms provided by state backends like Consul or S3 with DynamoDB locking enable safe concurrent usage and enhance the reliability and integrity of infrastructure management with Terraform.
+
 
 16. Describe in details what each of the following Terraform command does;
 a) terraform init
+
+Initializes a Terraform working directory, downloads the necessary provider plugins, and sets up the backend configuration.
+
 b) terraform apply --auto-approve
+
+Applies the changes defined in the Terraform configuration files to create or modify the infrastructure without manual confirmation, automatically approving all proposed changes.
+
 c) terraform fmt
+
+Formats the Terraform configuration files in a consistent style, automatically adjusting indentation, spacing, and syntax to improve readability and maintain a standardized code format.
+
 d) terraform validate
+
+ Checks the Terraform configuration files for syntax errors and validates the configuration against provider requirements, ensuring that the configuration is properly written and ready for execution.
+
 e) terraform destroy
 
+ Destroys the infrastructure managed by Terraform, terminating all resources defined in the configuration files, and releases the associated resources in the cloud provider, effectively tearing down the infrastructure.
+
 17. How would you name a file so that it is recognised by Terraform when you run terraform plan or apply?
+
+Will name the file with the .tf extension 
+
 18. What is the purpose of the Terraform plan command and why is it important to read carefully the output of the plan?
+
+
+The terraform plan command creates a preview of the changes that Terraform will make to the infrastructure. It is important to carefully read the plan output to verify intended changes, identify potential issues or conflicts, and assess the impact on existing resources. This helps prevent errors, ensure stability, and make informed decisions during the infrastructure deployment process.
+
 19. What Terraform concept would you use to ensure your code is re-useable?
+
+To ensure code reusability in Terraform, use Modules. They encapsulate and share infrastructure code as reusable components, promoting modularity and reducing duplication. Modules enable consistent provisioning, centralized updates, and efficient management, enhancing maintainability and scalability.
+
 20. Terraform provisioning are directory-oriented in the sense that the resources created in a "Terraform apply" are defined in the same directory and each directory maps to a state. You want to created three different environment (dev, test and production) from one directory containing the main Terraform definitions. How would you organise your file and directory system?
+
+
+To organize the file and directory system for creating three environments (dev, test, and production) from one directory with shared Terraform definitions, follow this structure:
+
+Create a main directory with common Terraform configurations and module definitions.
+Inside the main directory, create separate environment-specific directories for each environment.
+Place environment-specific configuration files and resource definitions within their respective directories.
+Keep the main Terraform configuration files in the main directory and reference modules as needed.
+Configure separate state backends for each environment to maintain separate state files.
+This structure ensures a clear separation of environments, allows customization of configurations, and facilitates independent provisioning and management of each environment.
+
+```
+└── main_directory
+    ├── main.tf
+    ├── variables.tf
+    ├── outputs.tf
+    ├── dev
+    │   ├── dev.tfvars
+    │   ├── dev_resources.tf
+    │   └── ...
+    ├── test
+    │   ├── test.tfvars
+    │   ├── test_resources.tf
+    │   └── ...
+    └── production
+        ├── production.tfvars
+        ├── production_resources.tf
+        └── ...
+```
+
 21. What do you understand by Terraform partial backend configuration?
+
+
+Terraform partial backend configuration involves specifying only a subset of the required settings for the backend. It allows initialization of a Terraform working directory without providing the complete backend configuration upfront. Partial configuration is useful when deferring or dynamically providing backend values, but it's important to note that a complete backend configuration is necessary for certain operations. It can be used in scenarios where immediate access to remote state storage isn't required or during initial stages of infrastructure provisioning.
+
 22. What do you understand by the <b> Chicken-and-Egg </b> problem with respect to Terraform backend configuration and how is it generally solved.
+
+The "chicken-and-egg" problem in Terraform backend configuration refers to the challenge of configuring the backend when it requires information that can only be obtained after the backend is already configured. To solve this, options include manual bootstrapping of the backend, using a local backend for initial stages, or programmatically configuring the backend through external tools or provider-specific methods. These approaches help break the circular dependency and allow Terraform to effectively manage infrastructure and track state changes.
 
 23. You want to use the Terraform public module "[terraform-aws-modules/ec2-instance/aws](https://github.com/terraform-aws-modules/terraform-aws-ec2-instance)" as shown in the code below. Go and look in the public module and fill in some of the interface value you will need in order to create the module
 ```
 module "ec2_instance" {
   source = "terraform-aws-modules/ec2-instance/aws"
+ 
+  name = "single-instance"
 
+  instance_type          = "t2.micro"
+  key_name               = "user1"
+  monitoring             = true
+  vpc_security_group_ids = ["sg-12345678"]
+  subnet_id              = "subnet-eddcdzz4"
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
 }
 ```
 
