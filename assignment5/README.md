@@ -50,8 +50,8 @@ This section will be used to write your profile for your CV. So record your key 
 
 1. A simple three-tier java based application is deployed across two availability zones(AZ) on a Tomcat server. The application uses a self-managed PostgresQL database as its persistence layer and Nginx as its web server. The application is not required to be highly resilient nor be capable of elastic behaviour.
 
-*) Describe how you might build this environment manually from the tool chain you are familiar with.
-*) Describe how you might build this environment from an automated provisioning pipeline from the tool chain you are familiar with.
+* Describe how you might build this environment manually from the tool chain you are familiar with.
+*  Describe how you might build this environment from an automated provisioning pipeline from the tool chain you are familiar with.
 
 2. Considering question 1 above, how would you re-design the application so that it is both elastic and highly available across the three tiers?
 
