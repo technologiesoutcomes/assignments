@@ -93,11 +93,18 @@ This section will be used to write your profile for your CV. So record your key 
 | 8  | Database (Slave)                                 | YYYYYYYY   |
 
 
-3.
+3. An AWS customer wants to connect their on-premise datacenter to their VPC network in AWS. Describe the ways in which this could be achieve?
 
-4.
+4. An AWS customer can build services using components from the AWS public domain as well as services deployed in the customer's VPC and datacentre. Name some AWS services that run in the public domain and how they might be integrated with services in the VPC and in the on-premise datacentre.
 
-5.
+5. With respect to AWS cloud services explain what each of these mean;
+
+* Infrastructure as a Service (IAAS)
+* Platform as a service (PAAS)
+* Software as a service (SAAS)
+* Managed services
+* Serverless services
+* Self-managed services
 
 
 
