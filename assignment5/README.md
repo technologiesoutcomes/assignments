@@ -18,31 +18,32 @@ This section will be used to write your profile for your CV. So record your key 
 
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
-1.
+1. What are Kubernetes Operators? 
 
-2.
+2. What are Kubernetes CRD?
 
-3.
-
-4.
-
-5.
-
+3. What are Kubernetes Controllers
 
 
 ## Linux administration and shell scripting
 
-1.
+Research the following Linux commands
 
-2.
+1. tar
 
-3.
+2. rsync
 
-4.
+3. chown
 
-5.
+4. curl
 
+5. systemctl
 
+6. useradd
+
+7. usermod
+
+8. ln
 
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
@@ -56,10 +57,6 @@ This section will be used to write your profile for your CV. So record your key 
 2. Considering question 1 above, how would you re-design the application so that it is both elastic and highly available across the three tiers?
 
 3. Describe how you would use Maven to build a java application
-
-4. 
-
-5.
 
 
 
