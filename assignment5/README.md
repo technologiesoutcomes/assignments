@@ -106,6 +106,21 @@ This section will be used to write your profile for your CV. So record your key 
 * Serverless services
 * Self-managed services
 
+6. In terms of their geographical location and distribution, AWS services can be roughly categorised as Global, Regional and Zonal. What do you understand by this classification?
+
+
+7. Complete the table below, naming some services in the corresponding category
+
+| Number      |           Global services                 | Regional services          |    Zonal services
+| :---        |            :----:                         | :---                       |    :---       |
+| 1  | XXXXXXXX                                           | YYYYYYYY                   |
+| 2  | XXXXXXXX                                           | YYYYYYYY                   |
+| 3  | XXXXXXXX                                           | YYYYYYYY                   |
+| 4  | XXXXXXXX                                           | YYYYYYYY                   |
+| 5  | XXXXXXXX                                           | YYYYYYYY                   |
+| 6  | XXXXXXXX                                           | YYYYYYYY                   |
+| 7  | XXXXXXXX                                           | YYYYYYYY                   |
+
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
