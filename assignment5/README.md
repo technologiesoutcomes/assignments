@@ -113,13 +113,14 @@ This section will be used to write your profile for your CV. So record your key 
 
 | Number      |           Global services                 | Regional services          |    Zonal services
 | :---        |            :----:                         | :---                       |    :---       |
-| 1  | XXXXXXXX                                           | YYYYYYYY                   |
-| 2  | XXXXXXXX                                           | YYYYYYYY                   |
-| 3  | XXXXXXXX                                           | YYYYYYYY                   |
-| 4  | XXXXXXXX                                           | YYYYYYYY                   |
-| 5  | XXXXXXXX                                           | YYYYYYYY                   |
-| 6  | XXXXXXXX                                           | YYYYYYYY                   |
-| 7  | XXXXXXXX                                           | YYYYYYYY                   |
+| 1  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
+| 2  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ       
+| 2  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ       
+| 3  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
+| 4  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
+| 5  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
+| 6  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
+| 7  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
 
 
 
