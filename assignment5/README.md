@@ -157,6 +157,14 @@ ssh-keygen -f mykeyfilename -t rsa -b 4096
   * AWS API
   * An AWS Linux server
 
+10. Explain what these two AWSCLI commands do. What could you say about the relation between a security group and an EC2 instance?
+
+```
+1) aws ec2 create-security-group --group-name MySecurityGroup --description "My security group" --vpc-id vpc-1a2b3c4d
+
+2) aws ec2 modify-network-interface-attribute --network-interface-id eni-686ea200 --attachment AttachmentId=eni-attach-43348162,DeleteOnTermination=false
+```
+
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
