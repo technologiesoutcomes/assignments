@@ -45,13 +45,35 @@ Research the following Linux commands
 
 8. ln
 
+9. chmod
+
+10. chage
+
+11. Explain what the following command does.
+```ssh-keygen -f mykeyfilename -t rsa -b 4096
+```
+12. Explain what these permissions bits mean and translate them into the corresponding numeric value.
+
+```
+1) -rwxrwxrwx
+2) -rw-r-xr-x
+3) -r--r--r--
+```
+
+13. Which of these bits relate to symbolic link and which to a directory and which a simple file?
+```
+1) drwxrwxrwx
+2) lrw-r-xr-x
+3) -r--r--r--
+```
+
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 
 
 1. A simple three-tier java based application is deployed across two availability zones(AZ) on a Tomcat server. The application uses a self-managed PostgresQL database as its persistence layer and Nginx as its web server. The application is not required to be highly resilient nor be capable of elastic behaviour.
 
-* Describe how you might build this environment manually from the tool chain you are familiar with.
+*  Describe how you might build this environment manually from the tool chain you are familiar with.
 *  Describe how you might build this environment from an automated provisioning pipeline from the tool chain you are familiar with.
 
 2. Considering question 1 above, how would you re-design the application so that it is both elastic and highly available across the three tiers?
@@ -123,6 +145,15 @@ Research the following Linux commands
 | 7  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
 
 
+8. What do you understand by the term <b> Authentication </> and describe how you authentication to the following systems;
+  * AWS Console
+  * AWS API
+  * An  ubuntu server running in AWS using ssh keys
+  
+9. What do you understand by the term <b> Authorisation </> and describe how you might set up authorisation to the following systems;
+  * AWS Console
+  * AWS API
+  * An AWS Linux server
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
