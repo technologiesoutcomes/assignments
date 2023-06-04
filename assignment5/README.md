@@ -147,15 +147,16 @@ ssh-keygen -f mykeyfilename -t rsa -b 4096
 | 7  | XXXXXXXX                                           | YYYYYYYY                   |    ZZZZZZZZ   
 
 
-8. What do you understand by the term <b> Authentication <b/> and describe how you authentication to the following systems;
+8. What do you understand by the term <b> Authentication </b> and describe how you authentication to the following systems;
   * AWS Console
   * AWS API
   * An  ubuntu server running in AWS using ssh keys
   
-9. What do you understand by the term <b> Authorisation <b/> and describe how you might set up authorisation to the following systems;
+9. What do you understand by the term <b> Authorisation </b> and describe how you might set up authorisation to the following systems;
   * AWS Console
   * AWS API
   * An AWS Linux server
+
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
