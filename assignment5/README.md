@@ -50,7 +50,9 @@ Research the following Linux commands
 10. chage
 
 11. Explain what the following command does.
-```ssh-keygen -f mykeyfilename -t rsa -b 4096
+```
+ssh-keygen -f mykeyfilename -t rsa -b 4096
+
 ```
 12. Explain what these permissions bits mean and translate them into the corresponding numeric value.
 
