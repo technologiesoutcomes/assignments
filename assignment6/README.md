@@ -175,8 +175,8 @@ http://<IP>:80
 
 7. With respect to network communication define what these terms mean.
 * Encapsulation
-* De-encapsulatio
-* Packers
+* De-encapsulation
+* Packets
 * Payload
 * Headers
 * Trailers
