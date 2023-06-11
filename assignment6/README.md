@@ -189,7 +189,11 @@ http://<IP>:80
 
 
 10. What are the various methods for connecting to an EC2 instance and could you list their advantages and disadvantages.
+Review the following links to learn more
 
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect.html
+* https://aws.amazon.com/blogs/infrastructure-and-automation/securing-your-bastion-hosts-with-amazon-ec2-instance-connect/
+* https://aws.amazon.com/blogs/infrastructure-and-automation/toward-a-bastion-less-world/
 
 11. What roles does an Auto-Scaling Group (ASG) play in an application serving architecture?
 
