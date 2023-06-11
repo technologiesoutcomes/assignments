@@ -161,10 +161,10 @@ http://<IP>:80
 3. Install and configure the MERN stack using the material in this link https://www.linode.com/docs/guides/how-to-create-a-mern-stack-application/
 
 
-4. You are implementing the design of two systems that are supposed to talk to each other. Come up with five questions that will help you better understand how these systems integrate with each other.
+4. You are implementing the design of two systems that are supposed to talk to each other. Come up with five questions that will help you better understand how these systems integrate with each other, that is the <b> the connective tissues </b>.
 
 
-5. When building a Three-tier architecture involving a Load balancer and an Auto-Scaling Group what steps would you take to ensure that there is a connective tissue between these two components? Refer to this document - https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html
+5. When building a Three-tier architecture involving a Load balancer and an Auto-Scaling Group what steps would you take to ensure that there is a <b>connective tissue </b> between these two components? Refer to this document - https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html
 
 6. At what level of the network OSI or TCP/IP stack does the following devices operate?
 
