@@ -105,16 +105,20 @@ http://<IP>:80
 
 3. Install and configure the MERN stack using the material in this link https://www.linode.com/docs/guides/how-to-create-a-mern-stack-application/
 
+
 4. You are implementing the design of two systems that are supposed to talk to each other. Come up with five questions that will help you better understand how these systems integrate with each other.
 
-5. At what level of the network OSI or TCP/IP stack does the following devices operate?
+
+5. When building a Three-tier architecture involving a Load balancer and an Auto-Scaling Group what steps would you take to ensure that there is a connective tissue between these two components? Refer to this document - https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html
+
+6. At what level of the network OSI or TCP/IP stack does the following devices operate?
 
 * Switches
 * Routers
 * AWS Application Load Balancer
 * AWS Network Load Balancer
 
-6. With respect to network communication define what these terms mean.
+7. With respect to network communication define what these terms mean.
 * Encapsulation
 * De-encapsulatio
 * Packers
@@ -123,16 +127,16 @@ http://<IP>:80
 * Trailers
 
 
-7. Why is a device operating at layer 4 of the OSI model more performant than one operating at layer 7?
+8. Why is a device operating at layer 4 of the OSI model more performant than one operating at layer 7?
 
 
-8. What roles does the Instance Metadata Service (IMDS) play in the architecture of the EC2 service?
+9. What roles does the Instance Metadata Service (IMDS) play in the architecture of the EC2 service?
 
 
-9. What are the various methods for connecting to an EC2 instance and could you list their advantages and disadvantages.
+10. What are the various methods for connecting to an EC2 instance and could you list their advantages and disadvantages.
 
 
-10. What roles does an Auto-Scaling Group (ASG) play in an application serving architecture?
+11. What roles does an Auto-Scaling Group (ASG) play in an application serving architecture?
 
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
