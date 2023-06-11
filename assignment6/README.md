@@ -80,6 +80,30 @@ find /var/www -type d -exec chmod 2775 {} \;
 find /var/www -type f -exec chmod 0664 {} \;
 echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 ```
+2. Launch an EC2 instance and manually run the following scripts to install Jenkins. Also run post installation checks to ensure all is running well.
+From (https://phoenixnap.com/kb/install-jenkins-ubuntu)
+```
+#!/bin/bash
+sudo apt update
+sudo apt install openjdk-11-jdk -y
+sudo apt install maven -y
+
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt update
+sudo apt install jenkins -y
+sudo systemctl status jenkins
+sudo systemctl enable --now jenkins
+sudo ufw enable
+sudo ufw allow 8080
+sudo ufw status
+```
+
 
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
