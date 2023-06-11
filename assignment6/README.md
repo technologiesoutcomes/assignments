@@ -27,14 +27,21 @@ This section will be used to write your profile for your CV. So record your key 
 
 ## Linux administration and shell scripting
 
- 
-12. Explain what these permissions bits mean and translate them into the corresponding numeric value.
-
-
-
-
-13. Which of these bits relate to symbolic link and which to a directory and which a simple file?
- 
+1. Research the concept of heredoc in shell scripting. Use this site as a resource - https://stackoverflow.com/questions/2953081/how-can-i-write-a-heredoc-to-a-file-in-bash-script
+2. Write a bash shell script which when run will create a file called <b>myconfig.conf</b> with the following as content of the file.
+```
+name=outcomer
+town=mytown
+class=seven
+gender=male
+```
+3. Write a bash script which will take a single argument and which when run will create a file called <b>myconfigparams.conf</b> with the following as content of the file. The argument should substitute the placeholder ????? below
+```
+name=?????
+town=mytown
+class=seven
+gender=male
+```
 
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
