@@ -31,8 +31,7 @@ This section will be used to write your profile for your CV. So record your key 
 
 ## CICD, Infrastructure as as Code (IaC), Terraform, Packer and Ansible
 
-1. Your provisioning architecture has been partitioned into two tiers - a base network infrastructure tier and an application tier - each of which is provisioined using Terraform. Each tier has its 
-own state file. Describe how you could dynamically retrieve parameters that are held in the base network tier state file from within the application tier Terraform definitions.
+1. Your provisioning architecture has been partitioned into two tiers - a base network infrastructure tier and an application tier - each of which is provisioined using Terraform and has its own state file. Describe how you could dynamically retrieve parameters that are held in the base network tier state file from within the application tier Terraform definitions.
 
 
 
@@ -41,6 +40,9 @@ own state file. Describe how you could dynamically retrieve parameters that are 
 ## System Architecture and Application Design, Cloud Computing (AWS)
 
 1. In terms of network connection between a client and a server, describe the following;
+https://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html
+https://www.keyfactor.com/blog/what-is-tls-handshake-how-does-it-work/
+
 * Connection sessions
 * TCP handshake
 * TLS handshake
@@ -50,13 +52,13 @@ own state file. Describe how you could dynamically retrieve parameters that are 
 
 3. How does the AWS Application Load Balancer determine which are the healthy backend servers to route traffic to?
 
-4. The main configurable components of the AWS Application Load Balancers are;
-* Listener
+4. The main configurable components of the AWS Application Load Balancers are given below. Describe each of these and how they are related to one another.
+* Listeners
 * Target groups
 * Targets
 * Elastic Load Balancer nodes
 * Health Checks
-Describe each of these and how they are related to one another.
+
 
 5. Research these infrastructure components and why you might use each in your solutions architecture;
 * A Proxy Load Balancer
