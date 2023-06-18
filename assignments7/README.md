@@ -50,7 +50,7 @@ https://www.keyfactor.com/blog/what-is-tls-handshake-how-does-it-work/
 
 2. Your technical requirement calls for a full end-2-end encryption of traffic between the client and backend servers through an AWS Application Load Balancer. Describe how you would set up this configuration.
 
-3. How does the AWS Application Load Balancer determine which are the healthy backend servers to route traffic to?
+3. How does the AWS Application Load Balancer determine which are the healthy backend servers to route traffic to? (Check this docuement https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
 
 4. The main configurable components of the AWS Application Load Balancers are given below. Describe each of these and how they are related to one another.
 * Listeners
