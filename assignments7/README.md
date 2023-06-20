@@ -4,16 +4,16 @@ This section will be used to write your profile for your CV. So record your key 
 
 | Number      |           Subject              | What you have learnt this week and how might you describe this at an interview?   |
 | :---        |            :----:              | :---  |
-| 1  | Collaboration                           | YYYYYYYY   |
-| 2  | Communication                           | YYYYYYYY   |
-| 3  | Automation/CICD                         | YYYYYYYY   |
-| 4  | AWS                                     | YYYYYYYY   |
-| 5  | Kubernetes                              | YYYYYYYY   |
-| 6  | Terraform                               | YYYYYYYY   |
-| 7  | Linux                                   | YYYYYYYY   |
-| 8  | System and Application Design           | YYYYYYYY   |
-| 9  | Productivity                            | YYYYYYYY   |
-| 10 | Yourself and your abilities             | YYYYYYYY   |
+| 1  | Collaboration                           | Collaboration is to work jointly with others or together as a team in order to achieve some set objectives.  |
+| 2  | Communication                           | Communication is the ability to convey ideas or opinions in a way that makes it understandable and clear to the recipient   |
+| 3  | Automation/CICD                         | CICD is continuous integration and continous deivery which is automation in stages of app development to deliver apps to customers   |
+| 4  | AWS                                     | AWS is a cloud provider (with over 33% market share) that provides cloud services to clients   |
+| 5  | Kubernetes                              |Kubernetes is an open source container ochestration platform that automates many of the manual processes involved in deploying, managing and scaling containerized applications.   |
+| 6  | Terraform                               | Terraform is an open source infrastructure as code tool that enables you to safely and predictably provision and manage infrastructure in any cloud.   |
+| 7  | Linux                                   | Linux is an open source Unix-like operating systems based on the Linux kernel.   |
+| 8  | System and Application Design           | This is process of designing the elements of a system such as the architecture,modules,and components, the different interfaces of those components and the data that goes through the system.   |
+| 9  | Productivity                            | Productivity is the amount of result that can be achieved over a specific period of time. This is based on ability to plan, focus,prioritize tasks and be consistent in approach.   |
+| 10 | Yourself and your abilities             | I am a very productive person with ability to collaborate and work within a team to achieve set objectives. I also have the ability to convey my opinions to clear understanding of the recipient.   |
 
 
 ## Kubernetes, Docker, Containerisation and Virtualisation
