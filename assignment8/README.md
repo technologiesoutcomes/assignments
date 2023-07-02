@@ -5,7 +5,7 @@
 * For security reasons your organisation has mandated that all Lambda functions connect to third party partner organisations through your VPC. Discuss how you would architect this solution.
 
 
-2. Hashicorp Packer can be used to create custom AMI in AWS. Research this product thoroughly implement the following:
+2. Hashicorp Packer can be used to create custom AMI in AWS. Research this product thoroughly and implement the following:
 
 * Install Packer on your local computer.
 * Create the Packer configuration to create an AMI in your AWS accounts that bakes in an Nginx instance.
