@@ -1,7 +1,6 @@
 ### Assignment 9
 
-1. Read this AWS blog - https://aws.amazon.com/blogs/mt/create-immutable-servers-using-ec2-image-builder-aws-codepipeline/ and answer the following questions.
-#   DO NOT IMPLEMENT THE SOLUTION - JUST READ IT AND MAKE SURE YOU UNDERSTAND IT
+1. Read this AWS blog - https://aws.amazon.com/blogs/mt/create-immutable-servers-using-ec2-image-builder-aws-codepipeline/ and answer the following questions. <b>DO NOT IMPLEMENT THE SOLUTION - JUST READ IT AND MAKE SURE YOU UNDERSTAND IT</b>
 
    * Discuss how applications running in an Auto Scaling Group with a custom AMI are deployed and maintained.
    * Why are immutable deployments preferred over mutable deployments?
@@ -14,6 +13,7 @@
 https://github.com/aws-samples/amazon-ec2-image-builder-samples
 
 Navigate to all the folders and read all the code and try to understand what it is doing. Answer the following questions;
+<b>DO NOT IMPLEMENT THE SOLUTION - JUST READ IT AND MAKE SURE YOU UNDERSTAND IT</b>
 
 * Describe in details what you think this repository delivers.
 
