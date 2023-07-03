@@ -8,6 +8,8 @@
    * What do you understand by the concept of a Golden Image?
 
 
+
+
 2. Imagine on your first week at a job your boss gave you the following GitHub repository to study and work on;
 
 https://github.com/aws-samples/amazon-ec2-image-builder-samples
