@@ -25,5 +25,25 @@
 * Describe why decoupled services are better able to scale than highly coupled services
 
 
+3. Implement the following;
+```
+cd technologiesoutcomes
 
+mkdir dockersamples
 
+cd dockersamples
+
+git clone https://github.com/dockersamples/buildme.git
+
+cd buildme
+
+sudo docker build --tag=buildme .
+sudo docker run --name=buildme --rm --detach buildme
+sudo docker exec -it buildme /bin/client
+sudo docker stop buildme
+
+sudo docker build --tag=buildme2 -f chapters/2.Dockerfile .
+sudo docker build --tag=buildme3 -f chapters/3.Dockerfile .
+sudo docker build --tag=buildme4 -f chapters/4.Dockerfile .
+
+```
