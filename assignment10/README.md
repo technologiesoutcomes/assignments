@@ -1,4 +1,4 @@
-1. Provide you understanding of the following terminologies;
+1. Provide your understanding of the following terminologies;
 * idempotency
 * synchronous
 * asynchronous
@@ -11,9 +11,10 @@
 * highly available architecture
 * mutable architecture (Pet)
 * immutable architecture (Cattle)
-* ephemeral 
+* ephemeral data store
 * scaling - horizontal, Vertical
 * Serverless architectures
+* Event-driven architectures
 * Managed services architectures
 
 2. Read the following AWS articles and answer the questions that follow;
@@ -47,3 +48,8 @@ sudo docker build --tag=buildme3 -f chapters/3.Dockerfile .
 sudo docker build --tag=buildme4 -f chapters/4.Dockerfile .
 
 ```
+
+4. Create an account in DockerHub and push an image to your account
+
+   
+5. In your AWS account, create a repository on ECR and push an image onto it (https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
