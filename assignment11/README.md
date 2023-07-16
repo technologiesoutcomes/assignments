@@ -81,6 +81,8 @@ Specify some values the satisfy this type definition.
 * jsonencode
 * compact
 * contains
+* flatten
+* toset
 
 11.  Describe why you might want to use the Terraform null_resource.
 
@@ -109,6 +111,40 @@ resource "null_resource" "cowsay" {
 * splat -  https://developer.hashicorp.com/terraform/language/expressions/splat
 * dynamic block  -  https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks
 
-Read the associate link and describe how you might wnat to apply these Terraform concepts.
+Read the associated link and describe how you might wnat to apply these Terraform concepts.
 
+
+16.    A variable is defined as follows
+```
+variable "words" {
+ type = object({
+ nouns = list(string),
+ adjectives = list(string),
+ verbs = list(string),
+ adverbs = list(string),
+ numbers = list(number),
+ })
+ validation {
+ condition = length(var.words["nouns"]) >= 5
+ error_message = "At least 5 nouns must be supplied."
+ }
+}
+```
+Describe what is takes to correctly specify this variable.
+
+17.    A variable is defined as follows. Add a default definition that satisfies the type.
+```
+variable "cluster_autoscaling" {
+  type = object({
+    enabled       = bool
+    min_cpu_cores = number
+    max_cpu_cores = number
+    min_memory_gb = number
+    max_memory_gb = number
+    gpu_resources = list(object({ resource_type = string, minimum = number, maximum = number }))
+    auto_repair   = bool
+    auto_upgrade  = bool
+  })
+}
+```
 
