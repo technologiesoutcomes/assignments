@@ -102,3 +102,13 @@ resource "null_resource" "cowsay" {
 
 14.  Describe why you might use the clause "depends_on" in the definition of a Terraform resource.
 
+
+15. Complex statements and logic
+
+* for   -  https://developer.hashicorp.com/terraform/language/expressions/for
+* splat -  https://developer.hashicorp.com/terraform/language/expressions/splat
+* dynamic block  -  https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks
+
+Read the associate link and describe how you might wnat to apply these Terraform concepts.
+
+
