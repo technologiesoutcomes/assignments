@@ -53,16 +53,16 @@ We will put all the EC2 instances in the public subnet for now.
 One instance will be the frontend and the other the backend. Label them accordingly.
 
 For the Frontend instance use user date script to install one of the following applications.
-a) Installation and configuration of Apache HTTP server (https://opensource.com/article/18/2/apache-web-server-configuration)
+* Installation and configuration of Apache HTTP server (https://opensource.com/article/18/2/apache-web-server-configuration)
 OR
-b) Installation and configuration of Nginx (https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
+* Installation and configuration of Nginx (https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
 
 For the Backend instance use user date script to install ALL these following applications.
-a) Installation and configuration of Tomcat on ubuntu 22-04 (https://linuxize.com/post/how-to-install-tomcat-10-on-ubuntu-22-04/)
-b) Installation and configuration of Jenkins (https://phoenixnap.com/kb/install-jenkins-ubuntu)
-c) Installation and configuration of Maven (https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu)
-d) Installation and configuration of PostgreSQl on ubuntu (https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-22-04-quickstart)
-e) Installation and configuration of Ansible on Ubuntu (https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-22-04)
+* Installation and configuration of Tomcat on ubuntu 22-04 (https://linuxize.com/post/how-to-install-tomcat-10-on-ubuntu-22-04/)
+*  Installation and configuration of Jenkins (https://phoenixnap.com/kb/install-jenkins-ubuntu)
+* Installation and configuration of Maven (https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu)
+* Installation and configuration of PostgreSQl on ubuntu (https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-22-04-quickstart)
+* Installation and configuration of Ansible on Ubuntu (https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-22-04)
 
 
 3) Using Terraform create an IAM role and attach to the EC2 instances (use any public resources as reference).
@@ -80,7 +80,7 @@ e) Installation and configuration of Ansible on Ubuntu (https://www.digitalocean
 References
 ===========
 
-a) https://github.com/terraform-in-action/manning-code.git
-b) The terraform-in-action book
-c) Three-tier project
-d) 
+* https://github.com/terraform-in-action/manning-code.git
+* The terraform-in-action book
+* Three-tier project
+* 
