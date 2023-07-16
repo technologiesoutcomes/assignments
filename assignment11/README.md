@@ -148,3 +148,71 @@ variable "cluster_autoscaling" {
 }
 ```
 
+18. Describe what the following code does.
+```
+data "aws_ami" "ubuntu" {
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+  }
+
+  owners = ["099720109477"]
+}
+```
+
+19. Describe what the following code does.
+```
+resource "aws_instance" "ansible_server" {
+  ami                    = data.aws_ami.ubuntu.id
+  instance_type          = "t3.micro"
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
+  key_name               = aws_key_pair.key_pair.key_name
+
+  tags = {
+    Name = "Ansible Server"
+  }
+
+  provisioner "remote-exec" { #A
+    inline = [
+      "sudo apt update -y",
+      "sudo apt install -y software-properties-common",
+      "sudo apt-add-repository --yes --update ppa:ansible/ansible",
+      "sudo apt install -y ansible"
+    ]
+
+    connection {
+      type        = "ssh"
+      user        = "ubuntu"
+      host        = self.public_ip
+      private_key = tls_private_key.key.private_key_pem
+    }
+  }
+  
+  provisioner "local-exec" { #B
+    command = "ansible-playbook -u ubuntu --key-file ansible-key.pem -T 300 -i '${self.public_ip},', app.yml" 
+  }
+}
+```
+
+20.    Describe what the following code does.
+```
+data "aws_secretsmanager_secret_version" "db" {
+  secret_id = var.secret_id
+}
+
+locals {
+  creds = jsondecode(data.aws_secretsmanager_secret_version.db.secret_string)
+}
+
+resource "aws_db_instance" "database" {
+  allocated_storage = 20
+  engine            = "postgres"
+  engine_version    = "12.2"
+  instance_class    = "db.t2.micro"
+  name              = "ptfe"
+  username          = local.creds["username"]
+  password          = local.creds["password"]
+}
+```
