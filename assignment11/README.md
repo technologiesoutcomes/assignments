@@ -1,85 +1,104 @@
 # Assignment11
 
-Read the below its entirety carefully before starting the implementation. Draw conceptualisation diagrams to make sure you have understood the requirements. Draft an implementation tasks list with each task clearly described and in roughly the order in which it will be implemented.
-ONLY when you are satisfied with your pre implementation planning should you begin to implement.
-
-1) Create a directory called simpleec2 in which you will have your terraform codebase. Create terraform files 
-following the conventional pattern in the directory - it should have a structure similar to the below:
-
+1.  Clone the following repository and use it as a model for some of your Terraform codebase.
 ```
-.
-├── backend.tf
-├── env
-│   ├── prd
-│   │   └── terraform.tfvars
-│   └── test
-│       └── terraform.tfvars
-├── main.tf
-├── modules
-│   ├── alb
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   ├── ec2
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   └── s3
-│       ├── main.tf
-│       ├── outputs.tf
-│       └── variables.tf
-├── outputs.tf
-├── provider.tf
-├── variables.tf
-└── version.tf
+https://github.com/terraform-in-action/manning-code.git
 ```
 
-(For now, put all your code in the root directory - do not use the modules directory yet. We will use the modules in 
-subsequent assignments)
+2.  A Terrafrom variable is defined as follows;
+```
+variable "servers" {
+    type = list(object({
+        name  = string,
+        size = string,
+        image = string,
+        region = string
+        tags = list(string)
+    }))
+}
+```
+Redefine the above variable, specifying a default value.
 
-You will simulate creating resources for two environments (test and prd). So create two backend buckets in your
-AWS account. These buckets will be used to hold your state for each environment;
+3.  A variable is defined as follows:
+```
+variable "servers" {
+    type = list(object({
+        name  = string,
+        size = string,
+        image = string,
+        region = string
+        tags = list(string)
+    }))
+}
+```
 
-1) technologiesoutcomes-<b>your-unique-name-here</b>-simpleec2-backend-test
-2) technologiesoutcomes-<b>your-unique-name-here</b>-simpleec2-backend-prd
+Specify a variable that contains at least two objects in the list that satisfy this variable definition.
 
-Write Terraform code to provision the following;
+4. A variable is defined as follows:
+```
+variable "mapmap" {
+  type        = map(map(string))
+}
+```
+Redefine the variable to include a default with values that satisfy the type definition.
 
-1) Network resources (one public subnet) for each environment (test and prd) - So a VPC for test,  a VPC for PRD.
-We will put all the EC2 instances in the public subnet for now.
+5. A variable is defined as follows:
+```
 
-2) For each environment, create two EC2 instances using t2.micro and ubuntu in your public subnet. 
-One instance will be the frontend and the other the backend. Label them accordingly.
+variable "node_pools_oauth_scopes" {
+  type        = map(list(string))
+  description = "Map of lists containing node oauth scopes by node-pool name"
 
-For the Frontend instance use user date script to install one of the following applications.
-* Installation and configuration of Apache HTTP server (https://opensource.com/article/18/2/apache-web-server-configuration)
-OR
-* Installation and configuration of Nginx (https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
+  # Default is being set in variables_defaults.tf
+  default = {
+    all               = ["https://www.googleapis.com/auth/cloud-platform"]
+    default-node-pool = []
+  }
+}
 
-For the Backend instance use user date script to install ALL these following applications.
-* Installation and configuration of Tomcat on ubuntu 22-04 (https://linuxize.com/post/how-to-install-tomcat-10-on-ubuntu-22-04/)
-*  Installation and configuration of Jenkins (https://phoenixnap.com/kb/install-jenkins-ubuntu)
-* Installation and configuration of Maven (https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu)
-* Installation and configuration of PostgreSQl on ubuntu (https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-22-04-quickstart)
-* Installation and configuration of Ansible on Ubuntu (https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-22-04)
+```
+Specify some values the satisfy this type definition.
 
+6. Discuss how these features could be used to create multiple resources in Terraform
+*  count
+*  for_each
 
-3) Using Terraform create an IAM role and attach to the EC2 instances (use any public resources as reference).
+7.  What is a Terraform provisioner typically used for? Provide some sample code of its use.
 
-4) Ensure you can log into to the instance using SSH keys - (the ssh user is ubuntu)
+8.  Which Terraform resource would you use to retrieve information from an existing infrastructure?
 
-5) Using the concept of partial configuration initialise the Terraform codebase for the test environment and then provision the test resources.
+9.  Describe how you could use Terraform to manage resources created outside of Terraform.
 
-6) Using the concept of partial configuration initialise the Terraform codebase for the prd environment and then provision the prd resources.
+10.   Below are some of the most commonly used Terraform Functions. Describe what each one does.
+     
+* try
+* coalesce
+* merge
+* join
+* lookup
+* distinct
+* concat
+* jsonencode
+* compact
+* contains
 
-7) Log onto the servers and the  AWS console to perform post-implementation verifications checks.
+11.  Describe why you might want to use the Terraform null_resource.
 
-8) Remenber to DESTROY all the resources (using terraform destroy)
+12. Install the cowsay command (sudo apt install cowsay). Put the code below in a file and run "terraform apply" and observer its reponse.
+Then run "terraform destroy" and observe the output.
+```
+resource "null_resource" "cowsay" {
+ provisioner "local-exec" {
+ command = "cowsay Hello World!"
+ }
+ provisioner "local-exec" {
+ when = destroy
+ command = "cowsay -d Goodbye cruel world!"
+ }
+}
+```
 
-References
-===========
+13.  Describe a use case where you might want to use a provider alias.
 
-* https://github.com/terraform-in-action/manning-code.git
-* The terraform-in-action book
-* Three-tier project
-* https://github.com/technologiesoutcomes/simpleterraform
+14.  Describe why you might use the clause "depends_on" in the definition of a Terraform resource.
+
