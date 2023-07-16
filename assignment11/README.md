@@ -82,4 +82,4 @@ References
 * https://github.com/terraform-in-action/manning-code.git
 * The terraform-in-action book
 * Three-tier project
-* 
+* https://github.com/technologiesoutcomes/simpleterraform
