@@ -41,8 +41,8 @@ subsequent assignments)
 You will simulate creating resources for two environments (test and prd). So create two backend buckets in your
 AWS account. These buckets will be used to hold your state for each environment;
 
-1) technologiesoutcomes-<your-unique-name-here>-simpleec2-backend-test
-2) technologiesoutcomes-<your-unique-name-here>-simpleec2-backend-prd
+1) technologiesoutcomes-<b>your-unique-name-here</b>-simpleec2-backend-test
+2) technologiesoutcomes-<b>your-unique-name-here</b>-simpleec2-backend-prd
 
 Write Terraform code to provision the following;
 
