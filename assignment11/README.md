@@ -1,8 +1,7 @@
 # Assignment11
 
-Read the below its entirety carefully. Draw conceptualisation diagrams to make sure you have understood the requirements.
-Draft an implementation tasks list with each task clearly described and in roughly the order in which it will be implemented.
-ONLY when you are satisfied with the planning should you begin to implement.
+Read the below its entirety carefully before starting the implementation. Draw conceptualisation diagrams to make sure you have understood the requirements. Draft an implementation tasks list with each task clearly described and in roughly the order in which it will be implemented.
+ONLY when you are satisfied with your pre implementation planning should you begin to implement.
 
 1) Create a directory called simpleec2 in which you will have your terraform codebase. Create terraform files 
 following the conventional pattern in the directory - it should have a structure similar to the below:
