@@ -66,7 +66,7 @@ For the Backend instance use user date script to install ALL these following app
 
 3) Using Terraform create an IAM role and attach to the EC2 instances (use any public resources as reference).
 
-4) Ensure you can log into to the instance using SSH keys
+4) Ensure you can log into to the instance using SSH keys - (the ssh user is ubuntu)
 
 5) Using the concept of partial configuration initialise the Terraform codebase for the test environment and then provision the test resources.
 
