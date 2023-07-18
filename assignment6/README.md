@@ -18,8 +18,7 @@ This section will be used to write your profile for your CV. So record your key 
 
 ## Kubernetes, Docker, Containerisation and Virtualisation
 
-1.  What is a Kubernetes ingress and what role does it serve? shfksdjhckscnsdffcs
-sdfsdfa
+1.  What is a Kubernetes ingress and what role does it serve?
 
 2.  What is a service in Kubernetes?
 
