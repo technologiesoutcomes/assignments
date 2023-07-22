@@ -1,9 +1,11 @@
-A. Review the link showing how GitHub is integrated into a CICD pipeline.
+A. Review the article at the link showing how GitHub is integrated into a CICD pipeline.
 https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/
+* Go to the associated repository and study it - https://github.com/aws-samples/aws-codedeploy-github-actions-deployment
+* Review the GitHub Actions workflow code
+* Investigate how the deployment onto the EC3 instances is implemented.
 
-1. The code below is used to bootstrap an EC2 server and install some applications.
+1. The code below is taken from the repository in the questions above (A)  - it is used to bootstrap an EC2 server and install some applications.
 Describe in details what it does.
-
 ```
 #!/bin/bash
 
@@ -80,7 +82,6 @@ apt purge
 ```
 
 3. These are some commonly used Linux commands. Describe what they do.
-
 ```
 df 
 du
@@ -91,7 +92,6 @@ ln -s
 tar
 rsync
 ```
-
 
 4) What variable type does this satisfy: zones = ["us-central1-a", "us-central1-b", "us-central1-f"] ?
 a) list(string)
@@ -167,11 +167,10 @@ dynamic “disk” {
   content {
   label = XXXXXX
   size  = YYYYYY
-  thin_provisioned = true}
+  thin_provisioned = true
+  }
 }
 ```
-
-
 
 10) Terraform code is defined as follows. What values would you put in the placeholders 
 XXXXXX and YYYYYY to make the dynamic block valid?
@@ -225,7 +224,6 @@ resource "azurerm_virtual_network" "dynamic_block" {
     address_prefix = "10.10.4.0/24"
   }
 }
-
 
 
 variable "subnets" {
