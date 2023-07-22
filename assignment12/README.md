@@ -1,3 +1,6 @@
+A. Review the link showing how GitHub is integrated into a CICD pipeline.
+https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/
+
 1. The code below is used to bootstrap an EC2 server and install some applications.
 Describe in details what it does.
 
