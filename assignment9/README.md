@@ -17,7 +17,13 @@
    * Why are immutable deployments preferred over mutable deployments?
    * What analogy is generally used to describe mutable and immutable deployments?
    * What do you understand by the concept of a Golden Image?
+Applications running in an Auto Scaling Group with a custom AMI are deployed by creating a launch configuration that specifies the AMI, instance type, and other configuration settings. The Auto Scaling Group then launches instances based on this configuration, automatically scaling up or down based on demand. These instances are maintained by updating the AMI with any necessary changes, creating a new launch configuration, and rolling out the new configuration to the Auto Scaling Group.
 
+Immutable deployments are preferred over mutable deployments because they eliminate the risk of configuration drift and ensure that all instances are identical. In a mutable deployment, changes made to one instance can cause inconsistencies between instances, leading to unpredictable behavior and potential downtime. Immutable deployments also make it easier to roll back changes by simply launching instances from a previous version of the AMI.
+
+The analogy generally used to describe mutable and immutable deployments is that of a snowflake versus a snowball. A snowflake is unique and fragile, while a snowball is uniform and robust. Similarly, mutable deployments are unique and fragile due to their configuration drift, while immutable deployments are uniform and robust.
+
+The concept of a Golden Image refers to a pre-configured and optimized image of an operating system or application that can be used as a base for creating new instances. This image includes all necessary software, patches, and configurations, and is designed to be easily replicated and deployed across multiple environments. The Golden Image ensures consistency across instances and simplifies the deployment process by eliminating the need for manual configuration
 
 2. Imagine on your first week at a job your boss gave you the following GitHub repository to study and work on;
 
