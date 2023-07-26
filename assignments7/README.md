@@ -34,9 +34,8 @@ This section will be used to write your profile for your CV. So record your key 
 1. Your provisioning architecture has been partitioned into two tiers - a base network infrastructure tier and an application tier - each of which is provisioined using Terraform and has its own state file. Describe how you could dynamically retrieve parameters that are held in the base network tier state file from within the application tier Terraform definitions.
 ## To dynamically retrieve parameters from the base network tier state file in the application tier Terraform definitions, you can use the Terraform data source feature. 
 
-First, you need to define a data source block in the application tier Terraform code that references the state file of the base network infrastructure tier. This can be done using the "terraform_remote_state" data source type. 
+First, you need to define a data source block in the application tier Terraform code that references the state file of the base network infrastructure tier. This can be done using the "terraform remote state" data source type. 
 
-Next, you can specify the specific parameter that you want to retrieve from the base network infrastructure tier state file using the appropriate attribute syntax
 
 
 
@@ -79,15 +78,37 @@ A connection session refers to the period of time during which a client and serv
 * Targets
 * Elastic Load Balancer nodes
 * Health Checks
-# 
+#Listeners: A listener is a component of the AWS Application Load Balancer that listens for incoming traffic and directs it to the appropriate target group. A listener is configured with a protocol (HTTP, HTTPS, TCP, etc.), a port number, and a set of rules that define how incoming traffic should be routed.
+
+Target groups: A target group is a logical grouping of backend servers that receive traffic from a specific listener. Each target group is associated with a specific protocol and port number. The AWS Application Load Balancer routes incoming traffic to the appropriate target group based on the rules defined in the listener configuration.
+
+Targets: A target is an instance of a backend server that is registered with a specific target group. Targets can be EC2 instances, containers, IP addresses, or Lambda functions. The AWS Application Load Balancer distributes incoming traffic across all healthy targets in a target group.
+
+Elastic Load Balancer nodes: The AWS Application Load Balancer is implemented as a highly available service that runs on multiple nodes. Each node is responsible for processing incoming traffic and forwarding it to the appropriate backend server. The Elastic Load Balancer nodes work together to provide high availability and scalability for the load balancer service.
+
+Health Checks: Health checks are used by the AWS Application Load Balancer to determine which backend servers are healthy and available to receive traffic. The health check mechanism periodically sends requests to each target in a target group to ensure that it is responding correctly. If a target fails the health check, it is marked as unhealthy and traffic is not routed to it until it passes the health check again. The health check configuration can be customized to suit specific application requirements. 
 
 5. Research these infrastructure components and why you might use each in your solutions architecture;
 * A Proxy Load Balancer
 * A PassThru Load Balancer
 * A reverse proxy
+1. Proxy Load Balancer: A proxy load balancer is a type of load balancer that sits between the client and the server. It receives requests from clients and forwards them to the appropriate server based on a set of predefined rules. This type of load balancer is useful in scenarios where there are multiple servers that need to be balanced, and where the servers are not directly accessible by the clients. The proxy load balancer can be used to distribute traffic evenly across multiple servers, ensuring that no single server is overloaded.
+
+2. PassThru Load Balancer: A pass-thru load balancer is a type of load balancer that simply passes requests through to the appropriate server without modifying them in any way. This type of load balancer is useful in scenarios where there are multiple servers that need to be balanced, but where the servers are already load balanced at a lower level (such as at the application layer). The pass-thru load balancer can be used to distribute traffic evenly across multiple servers, without adding any additional overhead or complexity.
+
+3. Reverse Proxy: A reverse proxy is a type of proxy server that sits between the client and the server, and is used to provide additional functionality such as load balancing, caching, and security. This type of infrastructure component is useful in scenarios where there are multiple servers that need to be balanced, and where additional functionality such as caching or security is required. The reverse proxy can be used to distribute traffic evenly across multiple servers, while also providing additional functionality such as SSL termination or content caching.
+
 
 6. Why might you want to use a TLS certificate in a solution architecture?
+A TLS (Transport Layer Security) certificate is used to secure communication between two endpoints over the internet. Here are some reasons why you might want to use a TLS certificate in a solution architecture:
 
+1. Authentication: A TLS certificate can be used to authenticate the identity of the server or client. This ensures that the communication is secure and that the data is not intercepted by a third party.
+
+2. Encryption: A TLS certificate encrypts the data being transmitted between the two endpoints. This ensures that the data cannot be intercepted and read by an unauthorized party.
+
+3. Trust: A TLS certificate is issued by a trusted third party, such as a Certificate Authority (CA). This ensures that the communication is secure and that the data is not tampered with.
+
+4. Compliance: Many regulations, such as PCI DSS, require the use of TLS certificates to secure communication between endpoints.
 
 ## Site Reliability Engineering (SRE), Troubleshooting, Observability
 
