@@ -80,6 +80,13 @@ apt list
 apt remove
 apt purge
 ```
+###
+- apt install: installs a package or software on the system.
+- apt update: updates the package lists and information about available packages from the repositories.
+- apt upgrade: upgrades all installed packages to their latest versions.
+- apt list: displays a list of all available packages from the repositories.
+- apt remove: removes a package or software from the system, but keeps its configuration files.
+- apt purge: removes a package or software along with its configuration files.
 
 3. These are some commonly used Linux commands. Describe what they do.
 ```
@@ -92,6 +99,15 @@ ln -s
 tar
 rsync
 ```
+###
+- df: displays the disk space usage of the file system.
+- du: estimates file space usage of a directory or files.
+- lsblk: lists information about all available block devices, such as hard drives and USB drives.
+- mount: mounts a file system to a specific directory in the file system hierarchy.
+- umount: unmounts a mounted file system from its mount point.
+- ln -s: creates a symbolic link between files or directories.
+- tar: creates or extracts archived files in tar format.
+- rsync: synchronizes files and directories between two locations, either locally or remotely.
 
 4) What variable type does this satisfy: zones = ["us-central1-a", "us-central1-b", "us-central1-f"] ?
 a) list(string)
@@ -99,12 +115,16 @@ b) list(list)
 c) map(string)
 d) list(map)
 e) string
+###
+a) list(string)
 
 
 5) Describe qualitatively the difference between these two statements in terms of the results they will produce.
 
 * ```[for s in var.list : upper(s)]```
 * ```{for s in var.list : s => upper(s)}```
+###
+The first statement uses a list comprehension to iterate over the elements in the "var.list" list and apply the "upper" function to each element, resulting in a new list of uppercase strings. The second statement uses a map comprehension to iterate over the elements in the "var.list" list and create a new map where each key is an element from the original list and each value is the uppercase version of that element. So, the difference between the two statements is that the first one produces a list of uppercase strings, while the second one produces a map with the original strings as keys and their uppercase versions as values.
 
 6) What Terraform variable type does the following satisfy?
 ```
@@ -241,4 +261,34 @@ subnets = [
   { name = "snet4", address_prefix = "10.10.4.0/24" }
 ]
 ```
+###
+resource "azurerm_virtual_network" "dynamic_block" {
+  name                = "vnet-dynamicblock-example-centralus"
+  resource_group_name = azurerm_resource_group.dynamic_block.name
+  location            = azurerm_resource_group.dynamic_block.location
+  address_space       = ["10.10.0.0/16"]
+
+  dynamic "subnet" {
+    for_each = var.subnets
+    content {
+      name           = subnet.value.name
+      address_prefix = subnet.value.address_prefix
+    }
+  }
+}
+
+variable "subnets" {
+  description = "list of values to assign to subnets"
+  type = list(object({
+    name           = string
+    address_prefix = string
+  }))
+}
+
+subnets = [
+  { name = "snet1", address_prefix = "10.10.1.0/24" },
+  { name = "snet2", address_prefix = "10.10.2.0/24" },
+  { name = "snet3", address_prefix = "10.10.3.0/24" },
+  { name = "snet4", address_prefix = "10.10.4.0/24" }
+]
 
