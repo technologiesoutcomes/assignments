@@ -31,7 +31,7 @@ Now you want to attempt a pod-to-pod communication by running the following. Sub
 
 Is pod-to-pod communication possible within a cluster?
 
-Why might it not be a good idea to configure a pod to communicate with another pod thought the server pod IP address?
+Why might it not be a good idea to configure a pod to communicate with another pod through the server pod's IP address?
 
 5) Run the following commands to create a deployment and a service pointing to the deployment.
 ```
