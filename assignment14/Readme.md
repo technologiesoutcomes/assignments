@@ -1,6 +1,11 @@
 # Assignment 14
 
 Create a Kubernetes cluster using the Terraform code in simple-eks Github repository and complete the following exercises on the cluster.
+You could also implement the exercise on one of these public playgrounds:
+
+1  https://killercoda.com/playgrounds/scenario/kubernetes
+
+2  https://labs.play-with-k8s.com/
 
 
 ### 1  Assign Pods to Nodes 
